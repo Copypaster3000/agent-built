@@ -4,6 +4,8 @@
 
 Agents forget everything between sessions and are often confidently wrong. So this process runs on checks and balances:
 
+- **You talk to one PM agent.** It runs the process for you: scopes each version, briefs the agents doing the work, checks their results, and brings you only your decisions.
+- **One small version at a time.** Each release has a short, frozen list of what matters most. New ideas wait for the next one, so every version actually finishes.
 - **Every decision is checked.** Yours or an agent's, it's checked against every earlier decision and traced for side effects. Conflicts come to you.
 - **Every finding is challenged.** A second agent tries to disprove it. Only what survives reaches you, batched, with a recommendation.
 - **Every claim is proven.** Tested on the real thing, or labeled as unverified.
