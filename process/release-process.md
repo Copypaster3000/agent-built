@@ -2,8 +2,6 @@
 
 How every version is scoped, built, reviewed, tested and shipped when AI agents do the work and one person makes the decisions. It keeps each release small, correct and finished, without review loops that keep widening scope.
 
-![How I ship with AI agents](../images/release-process.png)
-
 ## Roles
 
 - **Owner** (you): approves scope, how things work, every fix and every release. Only the owner can widen a frozen scope.
@@ -21,7 +19,7 @@ How every version is scoped, built, reviewed, tested and shipped when AI agents 
 6. **Fix round.** The Lead fixes the approved list with tests. A focused review then checks only those fixes. Its findings pass the finding gate and go through triage; they are never fixed automatically. Scope added mid-version goes through the scoping rule and gets the same focused review. *Gate:* the fixes are verified.
 7. **Convergence review.** When a version had more than one fix round or mid-version scope, one fresh reviewer examines everything changed since the first review, looking for fixes that break other fixes. Its findings pass the finding gate. *Gate:* no surviving finding is left untriaged.
 8. **Real-world test.** The Lead runs a fixed checklist on the real thing (a device, a staging environment, a release build), plus checks for what this version touched. The owner does only what needs their hands or eyes. *Gate:* the checklist passes. **After this step, only show-stoppers are fixed** (a false or harmful result, data loss, or a blocked core flow). Everything else waits.
-9. **Record.** The docs are made to match the final code (see `templates/` and the docs diagram):
+9. **Record.** The docs are made to match the final code (`DECISIONS.md` and `CODE_MAP.md`):
    - The Lead finalizes every decision entry the version touched, tags every implementing place with its decision ID (never deferred), and updates the code map for every subsystem it touched.
    - **An owner's approval in chat is the decision.** The PM writes the entry when the owner approves. It comes back to the owner only if the final code changes what was approved or it conflicts with another decision.
    - **The PM audits every changed line** of both docs against the release commit: each rule matches the code, every path and symbol exists, nothing remains from a dropped direction, no working notes. A passing checker is never enough; it can't see missing content.
