@@ -12,7 +12,7 @@ Agents forget everything between sessions and are often confidently wrong. So th
 
 You make every call, but only see what needs you.
 
-From building [Thumbwise](https://thumbwise.app), a paid Mac app shipped this way.
+From building [Thumbwise](https://thumbwise.app/?ref=github), a paid Mac app shipped this way.
 
 **To use it:** put `templates/CLAUDE.md` in your project root, copy the other templates into `docs/`, copy `process/release-process.md` to `docs/RELEASE_PROCESS.md`, and copy the folders in `skills/` into your project's `.claude/skills/`.
 
