@@ -12,7 +12,7 @@ Agents forget everything between sessions and are often confidently wrong. So th
 - **Agents get only what they need.** A tight brief, pointers instead of history, the right model for the job. Less noise, fewer mistakes, lower cost.
 - **Nothing ships without you.** You approve what's built, how it works, every fix and every release.
 
-You make every call, but only see what needs you.
+You're not just approving. You're the source of truth: you think each decision through, state it exactly, and the process carries it into every line of code, doc and test.
 
 From building [Thumbwise](https://thumbwise.app/?ref=github), a paid Mac app shipped this way.
 
@@ -55,6 +55,8 @@ The templates are ready to use as they are. To see what filled-in entries look l
 **What:** the instructions file every agent reads first: the sources of truth and their order, evidence rules, engineering principles, who does what (PM, Lead, Workers), which model to use for what, and how to brief a Worker. Using a tool other than Claude Code? Rename it `AGENTS.md`.
 
 **Why:** every agent session starts from zero. This gives each one the same rules and habits in the first minute, so you're not re-explaining how you work every time.
+
+![Who does what](images/who-does-what.png)
 
 ## DECISIONS.md
 
