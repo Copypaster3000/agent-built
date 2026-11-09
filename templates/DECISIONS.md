@@ -20,19 +20,7 @@ Rules for writing entries:
 
 ## <Area, e.g. Data and storage>
 
-### D-001: Every write is backed up first
-- **Rule:** Before any change to the user's data, the app saves a copy the user can restore from in one click. If the backup fails, the write doesn't start.
-- **Why:** Owner: "never risk someone's data to save a second."
-- **Code:** `src/storage/backup.ts` `createBackup`; `src/storage/write.ts` `writeWithBackup`.
-- **Since:** 1.0.0.
-
-## <Area, e.g. Messages>
-
-### D-002: Error titles state the reason
-- **Rule:** A popup that isn't a real failure is titled with its reason in a few words ("Nothing to save yet"); real failures keep "Couldn't save your work".
-- **Why:** Owner: "the reason should be the header."
-- **Code:**
-- **Since:** 1.2.0 (in progress).
+<Entries go here, newest decisions anywhere in their area.>
 
 ## Retired IDs
 

@@ -12,16 +12,12 @@ Each section uses one format, about 40 lines at most:
 - **Debug from:** a user-visible message or error code → where to start looking.
 
 ## <Subsystem, e.g. Saving>
-**Does:** Saves the user's draft to disk and backs it up before every overwrite.
+**Does:**
 **Flow:**
-1. `src/editor/Editor.ts` `save()` hands the draft to `src/storage/write.ts` `writeWithBackup`.
-2. `createBackup` (`src/storage/backup.ts`) copies the current file to `backups/` with a timestamp; a failure stops the write (D-001).
-3. `writeWithBackup` writes to a temporary file, then renames it over the original.
+1.
 **Key files:**
-- `src/storage/write.ts`: every write goes through here.
-- `src/storage/backup.ts`: backups and restore.
+-
 **Must hold:**
-- No write starts before its backup succeeds (D-001).
-- Writes are atomic: temporary file, then rename.
+-
 **Debug from:**
-- "Couldn't save your work" → `writeWithBackup` error path; check the backup step first.
+-

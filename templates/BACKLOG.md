@@ -27,10 +27,4 @@ Open questions: <what must be decided before it can be scoped>.
 
 ## Approved ideas
 
-### EXPORT-001: Export to PDF
-- **Status:** Deferred
-- **Approved:** 2026-01-15
-
-Let users export their current project as a PDF to share with people who don't use the app. Approved direction: one page per section, the app's own styling, nothing uploaded anywhere.
-
-Open questions: page size options; whether images are full resolution.
+<None yet.>

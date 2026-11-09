@@ -16,19 +16,37 @@ You make every call, but only see what needs you.
 
 From building [Thumbwise](https://thumbwise.app/?ref=github), a paid Mac app shipped this way.
 
-**To use it:** put `templates/CLAUDE.md` in your project root, copy the other templates into `docs/`, copy `process/release-process.md` to `docs/RELEASE_PROCESS.md`, and copy the folders in `skills/` into your project's `.claude/skills/`.
+## Getting started
+
+1. Copy `templates/CLAUDE.md` to your project root and fill in the parts in angle brackets.
+2. Copy the other files in `templates/` into `docs/`, and `process/release-process.md` to `docs/RELEASE_PROCESS.md`.
+3. Copy the folders in `skills/` into `.claude/skills/`.
+4. Open a Claude Code session in your project and tell it: *"You're the PM. Follow CLAUDE.md and docs/RELEASE_PROCESS.md."*
+5. Tell the PM what you want in your first version. It takes it from there and comes back to you for decisions.
+
+The templates are ready to use as they are. To see what filled-in entries look like, see [`examples/`](examples/).
+
+## Contents
+
+- **Process:** [Release process](#release-process)
+- **Docs:** [CLAUDE.md](#claudemd) · [DECISIONS.md](#decisionsmd) · [CODE_MAP.md](#code_mapmd) · [GLOSSARY.md](#glossarymd) · [LEDGER.md](#ledgermd) · [BACKLOG.md](#backlogmd)
+- **Skills:** [Start a Lead](#start-a-lead) · [Docs audit](#docs-audit)
 
 ---
+
+# Process
 
 ## Release process
 
 [`process/release-process.md`](process/release-process.md)
 
-**What:** the steps every version goes through: scope, build, independent review, the finding gate, triage, fix rounds, a real-world test, a docs audit and release, with a gate at each step and clear rules for when to stop.
+**What:** the steps every version goes through: scope, design, build, independent review, the finding gate, triage, fix rounds, a real-world test, a docs audit and release, with a gate at each step and clear rules for when to stop.
 
-**Why:** agents are fast but overconfident. This puts every finding through a second agent that tries to disprove it, brings me only real decisions in one batch, and stops reviews from widening the scope forever.
+**Why:** agents are fast but overconfident. This puts every finding through a second agent that tries to disprove it, brings you only real decisions in one batch, and stops reviews from widening the scope forever.
 
 ![How I ship with AI agents](images/release-process.png)
+
+# Docs
 
 ## CLAUDE.md
 
@@ -80,7 +98,9 @@ From building [Thumbwise](https://thumbwise.app/?ref=github), a paid Mac app shi
 
 **Why:** agents suggest a lot, and good ideas mentioned in passing get lost. The backlog keeps only what you approved, and makes clear it's not a promise or permission to build, so ideas never creep into a release on their own.
 
-## Skill: start a Lead
+# Skills
+
+## Start a Lead
 
 [`skills/start-lead/SKILL.md`](skills/start-lead/SKILL.md)
 
@@ -88,10 +108,14 @@ From building [Thumbwise](https://thumbwise.app/?ref=github), a paid Mac app shi
 
 **Why:** a good brief is most of what makes an agent reliable. This one gives the Lead the goal, the exact scope, its gates and limits, and how findings are handled, so it doesn't rediscover strategy or quietly widen the scope.
 
-## Skill: docs audit
+## Docs audit
 
 [`skills/docs-audit/SKILL.md`](skills/docs-audit/SKILL.md) · [`check_docs.py`](skills/docs-audit/check_docs.py)
 
 **What:** the release-time audit of `DECISIONS.md` and `CODE_MAP.md` against the final code, plus a checker script. The script confirms every path and code name the docs cite exists, every decision ID is accounted for, every ID tagged in the code is an active decision, and the ledger's next-free-ID line is right. Set your folders in its CONFIG block.
 
 **Why:** docs that drift from the code are worse than no docs, because agents trust them. The script catches the mechanical drift in seconds; the line-by-line review catches what a script can't see, so the docs you approve a release on are accurate.
+
+---
+
+MIT licensed. Copy it, adapt it, make it yours.

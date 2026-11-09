@@ -7,13 +7,11 @@ Rules:
 - A term is added or changed only with the owner's approval. At each release, the PM checks this file against what the owner said during the version and brings any needed change to the owner first.
 - When a decision governs a term, cite its ID.
 
-## <The product's own concepts>
+## <Your product's terms>
 
-- **Draft:** the user's edited version, not yet saved to the real thing. Code: `pendingState`.
-- **Restore:** putting back a saved backup in one step (D-001).
-- **Sync:** pulling the latest data from the user's account. Never called "refresh" in user-facing text.
+- **<Term>:** <what it means to the user>. Code: `<name in code, if different>`.
 
-## <Process terms>
+## Process terms
 
 - **Owner:** the person who approves scope, behavior, fixes and releases.
 - **PM:** the agent session that runs the release process for the owner.
