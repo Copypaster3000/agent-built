@@ -36,4 +36,4 @@ Rules for writing entries:
 
 ## Retired IDs
 
-- D-000: replaced by D-001.
+None yet. When a decision is replaced, remove it above and list it here, e.g. `- D-007: replaced by D-012.`

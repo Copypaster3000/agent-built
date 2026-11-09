@@ -14,7 +14,7 @@ Each section uses one format, about 40 lines at most:
 ## <Subsystem, e.g. Saving>
 **Does:** Saves the user's draft to disk and backs it up before every overwrite.
 **Flow:**
-1. `src/editor/Editor.ts` `save()` calls `writeWithBackup` (`src/storage/write.ts`).
+1. `src/editor/Editor.ts` `save()` hands the draft to `src/storage/write.ts` `writeWithBackup`.
 2. `createBackup` (`src/storage/backup.ts`) copies the current file to `backups/` with a timestamp; a failure stops the write (D-001).
 3. `writeWithBackup` writes to a temporary file, then renames it over the original.
 **Key files:**
