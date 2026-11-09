@@ -120,4 +120,6 @@ The templates are ready to use as they are. To see what filled-in entries look l
 
 ---
 
+Built by [@Copypaster3000](https://x.com/Copypaster3000). Questions or ideas? Find me on X.
+
 MIT licensed. Copy it, adapt it, make it yours.
