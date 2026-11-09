@@ -14,6 +14,8 @@ Agents forget everything between sessions and are often confidently wrong. So th
 
 You're not just approving. You're the source of truth: you think each decision through, state it exactly, and the process carries it into every line of code, doc and test.
 
+![Who does what](images/who-does-what.png)
+
 From building [Thumbwise](https://thumbwise.app/?ref=github), a paid Mac app shipped this way.
 
 ## Getting started
@@ -55,8 +57,6 @@ The templates are ready to use as they are. To see what filled-in entries look l
 **What:** the instructions file every agent reads first: the sources of truth and their order, evidence rules, engineering principles, who does what (PM, Lead, Workers), which model to use for what, and how to brief a Worker. Using a tool other than Claude Code? Rename it `AGENTS.md`.
 
 **Why:** every agent session starts from zero. This gives each one the same rules and habits in the first minute, so you're not re-explaining how you work every time.
-
-![Who does what](images/who-does-what.png)
 
 ## DECISIONS.md
 
