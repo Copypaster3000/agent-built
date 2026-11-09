@@ -1,10 +1,18 @@
 # agent-built
 
-How I build and ship software with AI agents while keeping every decision my own.
+**Build serious consumer software with AI agents at full speed, with every decision still going through you.**
 
-AI agents can write most of the code, but they forget everything between sessions, and they'll happily build on top of a decision you made last month without knowing it exists. This repo is the process and the docs I use as a solo developer to keep agents productive and keep myself in charge: what gets built, how it works, and what ships. Everything here is general, meant to be adapted to your own projects.
+Agents forget everything between sessions and are often confidently wrong. So this process runs on checks and balances:
 
-It comes from building [Thumbwise](https://thumbwise.app), a Mac app shipped this way.
+- **Every decision is checked.** Yours or an agent's, it's checked against every earlier decision and traced for side effects. Conflicts come to you.
+- **Every finding is challenged.** A second agent tries to disprove it. Only what survives reaches you, batched, with a recommendation.
+- **Every claim is proven.** Tested on the real thing, or labeled as unverified.
+- **Agents get only what they need.** A tight brief, pointers instead of history, the right model for the job. Less noise, fewer mistakes, lower cost.
+- **Nothing ships without you.** You approve what's built, how it works, every fix and every release.
+
+You make every call, but only see what needs you.
+
+From building [Thumbwise](https://thumbwise.app), a paid Mac app shipped this way.
 
 **To use it:** put `templates/CLAUDE.md` in your project root, copy the other templates into `docs/`, copy `process/release-process.md` to `docs/RELEASE_PROCESS.md`, and copy the folders in `skills/` into your project's `.claude/skills/`.
 
