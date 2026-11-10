@@ -33,7 +33,7 @@ Applies to every item before it enters a version, at the start or mid-version. T
 
 1. **Trace** how it works today (code and decisions) and what users actually run into.
 2. **Weigh it:** how often it happens against the risk and size of the change. "Don't do it" is a valid recommendation.
-3. **Find the smallest change,** preferring an existing flow over new logic or special cases.
+3. **Find the smallest change,** preferring an existing flow over new logic or special cases. For a rule that cuts across many tools or flows (e.g. every AI call), define one general rule enforced at one shared point, with the safe behaviour as the default for anything new or unknown; never build it case by case.
 4. **List what else it affects:** other flows, saved data, other decisions, anything that would become inconsistent.
 5. **Keep familiar patterns** users already know; a new kind of flow only if the owner chooses it.
 6. **Bring the owner only what needs them,** short first, each with a recommendation. If nothing needs the owner, say so in one line.

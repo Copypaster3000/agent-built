@@ -48,6 +48,7 @@ Prefer primary documentation for public contracts. Verify undocumented behavior 
 
 - Keep business logic deterministic and testable outside thin UI and platform adapters.
 - Make validation proportional to the change and its risk. Check observable behavior at service boundaries; avoid tests that mirror the implementation.
+- Test a safety rule through the real path that triggers it. A test that forces the condition directly (an override) can't catch bugs in how the condition is detected, so pair it with at least one test that runs the real flow.
 - For new behavior, validate the smallest safe end-to-end slice before expanding it.
 - Reuse or extend existing rules; allow focused duplication when it's clearer than an abstraction. No frameworks or infrastructure for unapproved features.
 - One deterministic rule beats special cases. Remove over-strict checks. Prefer fewer lines.
